@@ -5,6 +5,17 @@
     box-sizing: border-box; 
 }
 
+.title{
+    /* margin: 100px; */
+    /* width: z00%; */
+    position: relative; 
+    top: 30px; 
+    left: 30px;
+    padding: 20px;
+    height: 300px;
+
+}
+ 
 .container{ 
     width: 100%; 
     min-height: 100vh; 
@@ -20,6 +31,7 @@ h1 {
     /* rem */
     font-size: 5rem;
     color:rgb(0, 255, 238); 
+
 }
 
 h1:hover {
