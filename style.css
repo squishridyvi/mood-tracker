@@ -5,6 +5,14 @@
     box-sizing: border-box; 
 }
 
+
+body{
+    width: 80%;
+    margin: 0 auto; 
+
+}
+
+
 .title{
     /* margin: 100px; */
     /* width: z00%; */
