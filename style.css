@@ -55,3 +55,16 @@ h1:hover {
 
 }
 
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navdiv ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0; 
+    gap: 0;
+}
+
