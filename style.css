@@ -68,3 +68,9 @@ h1:hover {
     gap: 0;
 }
 
+
+.rectangle { 
+    width: 200;
+    height: 100;
+    background-color: #4e085f;
+}
