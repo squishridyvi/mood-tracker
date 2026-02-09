@@ -52,7 +52,6 @@ h1:hover {
     padding-left: 15px;
     /* background-color: rgb(114, 25, 170); */
     background: rgb(65, 113, 197);
-
 }
 
 .navdiv {
@@ -65,10 +64,25 @@ h1:hover {
     display: flex;
     align-items: center;
     margin: 0; 
+    padding: 0;
     gap: 0;
 }
 
+.navdiv ul li {
+    float: left;
+}
 
+.navdiv ul li a{ 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover { 
+    background-color: #111111;
+}
 .rectangle { 
     width: 200px;
     height: 300px;
