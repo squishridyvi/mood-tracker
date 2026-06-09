@@ -87,12 +87,6 @@ ul li a:hover {
 }
 
 
-.rectangle { 
-    width: 200px;
-    height: 300px;
-    background-color: #4e085f;
-}
-
 .buttons {
     display: flex;
     gap: 10px;
