@@ -16,7 +16,8 @@ body{
 .title{
     /* margin: 100px; */
     /* width: z00%; */
-    position: relative; 
+    /* position: relative; */
+    text-align: center;
     top: 30px; 
     left: 30px;
     padding: 20px;
@@ -90,4 +91,8 @@ ul li a:hover {
     width: 200px;
     height: 300px;
     background-color: #4e085f;
+}
+
+.buttons {
+    display: flex;
 }
