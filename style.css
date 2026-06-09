@@ -95,4 +95,5 @@ ul li a:hover {
 
 .buttons {
     display: flex;
+    gap: 10px;
 }
