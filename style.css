@@ -91,3 +91,8 @@ ul li a:hover {
     display: flex;
     gap: 10px;
 }
+
+.textarea {
+    width: 100px;
+    height: 30000px;
+}
