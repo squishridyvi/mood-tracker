@@ -97,3 +97,8 @@ ul li a:hover {
     height: 300px;
 }
 
+.scan-button {
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+}
