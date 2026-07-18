@@ -18,16 +18,16 @@ body{
     /* width: z00%; */
     /* position: relative; */
     text-align: center;
-    top: 30px; 
+    top: 30px;
     left: 30px;
     padding: 20px;
     height: 300px;
+    font-size: 3rem;
 
 }
 
 .title img {
     margin: 0 auto;
-    margin-top: -20px;
     display: block;
     width: 400px;
     height: auto;
