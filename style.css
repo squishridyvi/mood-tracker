@@ -12,18 +12,22 @@ body{
 
 }
 
+.entry-header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
 
 .title{
     /* margin: 100px; */
     /* width: z00%; */
     /* position: relative; */
     text-align: center;
-    top: 30px;
-    left: 30px;
     padding: 20px;
     height: 300px;
     font-size: 3rem;
-    margin-top: -40px;
+    position: relative; top: -40px;
 
 }
 
