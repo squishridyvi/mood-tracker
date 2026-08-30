@@ -35,8 +35,30 @@ body{
     font-size: 5rem;
     position: relative; top: -40px;
     margin-bottom: 30px;
+    background: radial-gradient(circle, #ff0000, #0000ff);
+    animation: Burst 5s;
 
 }
+
+@keyframes Burst {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+/* .title::before {
+
+}
+
+.title::after {
+
+}
+*/ 
 
 .title img {
     margin: 0 auto;
