@@ -156,9 +156,13 @@ body {
 
 
 /* about.html */ 
-.buttons {
+.emojis {
     display: flex;
     gap: 100px;
     justify-content: center;
     margin-bottom: 40px;
+}
+
+.button img:focus {
+    transform: scale(5); 
 }
