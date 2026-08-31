@@ -31,22 +31,21 @@ body{
     /* position: relative; */
     text-align: center;
     padding: 20px;
-    height: 400px;
+    height: 500px;
     font-size: 5rem;
     position: relative; top: -40px;
     margin-bottom: 30px;
-    background: radial-gradient(circle, #ff0000, #0000ff);
+    background: radial-gradient(circle, #ff0000 35%, #0000ff 70%, transparent 70%);
     animation: Burst 5s;
-
+    border-radius: 50%;
+    color: white;
 }
 
 @keyframes Burst {
     from {
-        transform: translateX(0%);
     }
 
     to {
-        transform: translateX(100%);
     }
 }
 
