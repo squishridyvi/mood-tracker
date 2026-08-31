@@ -9,11 +9,11 @@
 body{
     width: 100%;
     margin: 0 auto; 
-
 }
 
 .text-content {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .entry-header {
@@ -132,11 +132,6 @@ ul li a:hover {
     background-color: #111111;
 }
 
-
-.buttons {
-    display: flex;
-    gap: 10px;
-}
 
 .textarea {
     width: 100%;
