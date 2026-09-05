@@ -198,3 +198,16 @@ body {
 .button img:focus {
     transform: scale(5); 
 }
+
+
+.container.result-container{ 
+    width: 100%; 
+    min-height: 100vh; 
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* cross axis */ 
+    justify-content: flex-start;   /* main axis */
+
+}
