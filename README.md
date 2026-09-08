@@ -14,3 +14,4 @@
 - Javascript
 - Colab
 - Python/HuggingFace
+- Figma
