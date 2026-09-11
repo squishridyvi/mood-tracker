@@ -217,6 +217,12 @@ body {
     transform: scale(5); 
 }
 
+.button figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
 
 .container.result-container{ 
     width: 100%; 
