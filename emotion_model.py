@@ -6,17 +6,15 @@ from fastapi.middleware.cors import CORSMiddleware
 # Loading the emotion analysis pipeline
 emotion_analyzer = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base", top_k=None)
 
-# Creating a FastAPI app
-
 class Entry(BaseModel):
     text: str
-    
+
+# Creating a FastAPI app
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
+    allow_origins=["http://127.0.0.1:5501"],
     allow_methods=["*"],
     allow_headers=["*"]
 )
