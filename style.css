@@ -225,6 +225,7 @@ body {
 }
 
 .container.result-container{ 
+    gap: 20px;
     width: 100%; 
     min-height: 100vh; 
     background: linear-gradient(135deg, #153677, #4e085f);
@@ -234,4 +235,10 @@ body {
     align-items: center;   /* cross axis */ 
     justify-content: flex-start;   /* main axis */
 
+}
+
+#topEmotion {
+    font-size: 2rem;
+    color: white;
+    margin-top: 20px;
 }
