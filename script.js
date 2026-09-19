@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
+    if (!localStorage.getItem("firstName") || !localStorage.getItem("lastName")) {
+        window.location.href = "index.html";
+    } else {
+        let firstName = localStorage.getItem("firstName");
+        let lastName = localStorage.getItem("lastName");
+        document.getElementById("welcome").textContent = `Welcome, ${firstName} ${lastName}!`;
+    }
     document.querySelector(".scan-button img").addEventListener("click", function() {
         document.querySelector(".spinner").style.display = "inline-block";
         let entryText = document.querySelector(".textarea").value; 

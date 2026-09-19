@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mood Tracker App</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("add-task-btn").addEventListener("click", function() {
+                let firstName = document.getElementById("firstName").value;
+                let lastName = document.getElementById("lastName").value;
+                if (firstName.trim() === "" || lastName.trim() === "") {
+                    alert("Please enter both your first and last name.");
+                } else {
+                    localStorage.setItem("firstName", firstName);
+                    localStorage.setItem("lastName", lastName);
+                    // Proceed to the next page or perform any other action
+                    window.location.href = "about.html";
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <!-- nav container -->
@@ -25,12 +41,10 @@
     <div class="container">
         <div class="entry-header">
             <h4 class="title">Mood Tracker<img src="Group 1.png"></h4>
-            <input type="text" size = "20" name ="firstName">
-            <input type="text" size = "20" name ="lastName">
+            <input id="firstName" type="text" size = "20" name ="firstName" placeholder="Enter your name">
+            <input id="lastName" type="text" size = "20" name ="lastName" placeholder="Enter your last name">
         </div>
-        <a href="about.html">
             <button type="button" style="font-size:25px; background-color: grey; color:aqua; border-radius: 25px;" id="add-task-btn">Start new Entry</button>
-        </a>
     </div> 
 </body>
 </html> 
