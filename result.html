@@ -9,6 +9,10 @@
         document.addEventListener("DOMContentLoaded", function() {
             let entryText = localStorage.getItem("entryText");
             document.getElementById("entryText").textContent = entryText;
+            let scores = JSON.parse(localStorage.getItem("scores"));
+            document.getElementById("topFace").src = scores[0].image;
+            let topEmotion = scores[0];
+            document.getElementById("topEmotion").textContent = `Top Emotion: ${topEmotion.label} (${Math.round(topEmotion.score * 100)}%)`;
         });
     </script>
 </head>
@@ -16,6 +20,8 @@
     <div class="container result-container">
     <h1>Mood Analysis Result</h1>
     <p id="entryText"></p>
+    <img id="topFace" src="" alt="Result Image" width="200">
+    <h2 id="topEmotion"></h2>
     <button class="go-back-button" onclick="window.location.href='about.html'"><img src="go_back.png" alt="go back" width="100"></button>
     </div>
 </body>
