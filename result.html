@@ -14,6 +14,12 @@
             document.getElementById("topFace").src = `${topEmotion.label}_face.png`;
             document.getElementById("topFace").alt = topEmotion.label;
             document.getElementById("topEmotion").textContent = `Top Emotion: ${topEmotion.label} (${Math.round(topEmotion.score * 100)}%)`;
+            for (let i = 1; i < scores.length; i++) {
+                let emotion = scores[i];
+                let emotionDiv = document.createElement("div");
+                emotionDiv.textContent = `${emotion.label}: ${Math.round(emotion.score * 100)}%`;
+                document.getElementById("otherEmotions").appendChild(emotionDiv);
+            }
         });
     </script>
 </head>
@@ -23,6 +29,7 @@
     <p id="entryText"></p>
     <img id="topFace" src="" alt="Result Image" width="200">
     <h2 id="topEmotion"></h2>
+    <div id="otherEmotions"></div>
     <button class="go-back-button" onclick="window.location.href='about.html'"><img src="go_back.png" alt="go back" width="100"></button>
     </div>
 </body>
