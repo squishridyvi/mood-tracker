@@ -10,8 +10,9 @@
             let entryText = localStorage.getItem("entryText");
             document.getElementById("entryText").textContent = entryText;
             let scores = JSON.parse(localStorage.getItem("scores"));
-            document.getElementById("topFace").src = scores[0].image;
             let topEmotion = scores[0];
+            document.getElementById("topFace").src = `${topEmotion.label}_face.png`;
+            document.getElementById("topFace").alt = topEmotion.label;
             document.getElementById("topEmotion").textContent = `Top Emotion: ${topEmotion.label} (${Math.round(topEmotion.score * 100)}%)`;
         });
     </script>
