@@ -18,9 +18,16 @@
                 let emotion = scores[i];
                 let emotionDiv = document.createElement("div");
                 emotionDiv.textContent = `${emotion.label}: ${Math.round(emotion.score * 100)}%`;
+                let topEmotionImg = document.createElement("img");
+                topEmotionImg.src = `${emotion.label}_face.png`;
+                topEmotionImg.alt = emotion.label;
+                topEmotionImg.width = 50;
+                emotionDiv.appendChild(topEmotionImg);
                 document.getElementById("otherEmotions").appendChild(emotionDiv);
             }
+
         });
+
     </script>
 </head>
 <body>
