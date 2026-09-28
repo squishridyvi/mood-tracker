@@ -208,7 +208,8 @@ body {
 /* about.html */ 
 .emojis {
     display: flex;
-    gap: 100px;
+    gap: 50px;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 40px;
 }
@@ -245,6 +246,18 @@ body {
 
 #otherEmotions {
     font-size: 1.2rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
     color: white;
     margin-top: 10px;
+}
+
+#otherEmotions div {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
 }
