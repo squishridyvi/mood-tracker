@@ -76,6 +76,7 @@ body{
 }
  
 .container{ 
+    position: relative;
     width: 100%; 
     min-height: 100vh; 
     background: linear-gradient(135deg, #153677, #4e085f);
@@ -290,4 +291,18 @@ body {
 
 .signin-form label {
     color: white;
+}
+
+/* stars.html */ 
+.star {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    size: 4px;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    animation: spin 5s linear infinite
 }
