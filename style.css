@@ -6,9 +6,10 @@
 }
 
 
-body{
+body {
     width: 100%;
-    margin: 0 auto; 
+    margin: 0 auto;
+    background-color: #153677;
 }
 
 .text-content {
@@ -200,12 +201,6 @@ ul li a:hover {
 }
 
 
-body {
-    background-color: pink;
-}
-
-
-
 /* about.html */ 
 .emojis {
     display: flex;
@@ -308,4 +303,13 @@ body {
     0% { opacity: 0.2; transform: translate(-50%, -50%) scale(1); }
     50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
     100% { opacity: 0.2; transform: translate(-50%, -50%) scale(1); }
+}
+
+#add-task-btn {
+    background-color: #e8eae8;
+    color: rgba(4, 150, 28, 0.766);
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 25px;
 }
