@@ -8,21 +8,29 @@
 
 </head>
 <body>
-    <nav class="nav-container">
-        <div class="navdiv">
-            <!-- right navigation bar -->
-            <ul class="left-side">
-                <li><a href="index.html">Home</a></li>
-            </ul>
-            <!-- left -->
-            <ul class="right-side">
-                <button><a href="signin.html">Sign In </a></button>
-                <button><a href="#">Sign Up</a></button>
-            </ul>
-        </div>
-    </nav>
-
-    <h1>Sign In</h1>
-    <input type="text" size = "20" name ="lastName">
+    <!-- nav container -->
+        <nav class="nav-container">
+            <div class="navdiv">
+                <!-- right navigation bar -->
+                <ul class="left-side">
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <!-- left -->
+                <ul class="right-side">
+                    <button><a href="signin.html">Sign In </a></button>
+                    <button><a href="#">Sign Up</a></button>
+                </ul>
+            </div>
+        </nav>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form class="signin-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+        </form>
+   </div>
 </body>
 </html>
