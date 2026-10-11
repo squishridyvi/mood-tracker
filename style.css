@@ -267,7 +267,7 @@ ul li a:hover {
     margin-top: 50px;
 }
 
-.signin-form input {
+.signin-form input, .signup-form input {
     padding: 8px;
     width: 250px;
     font-size: 1.2rem;
