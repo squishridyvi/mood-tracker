@@ -26,12 +26,13 @@
                 <h1>Sign Up</h1>
                 <div class="input-box">
                     <span class="icon"><i class="fas fa-user"></i></span>
-                    <input type="text" name="username" required>
                     <label>Username</label>
-                    <input type="email" name="email" required>
+                    <input type="text" name="username" required placeholder="Enter your username">
                     <label>Email</label>
-                    <input type="password" name="password" required>
+                    <input type="email" name="email" required placeholder="Enter a valid email address">
                     <label>Password</label>
+                    <input type="password" name="password" required minlength="8">
+                    <p class="hint">At least 8 characters, 1 uppercase, 1 lowercase, 1 number</p>
                 </div>
             </div>
         </form>

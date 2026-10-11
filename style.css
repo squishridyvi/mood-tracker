@@ -305,6 +305,11 @@ ul li a:hover {
     flex-direction: column;
 }
 
+.hint {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
 .icon {
     margin-right: 10px;
 }
