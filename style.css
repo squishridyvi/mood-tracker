@@ -301,6 +301,8 @@ ul li a:hover {
 
 .input-box {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon {
