@@ -309,6 +309,7 @@ ul li a:hover {
     gap: 15px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .hint {
