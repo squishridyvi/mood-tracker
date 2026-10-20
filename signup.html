@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".signup-form").addEventListener("submit", function(e) {
+                e.preventDefault();
+                // Handling form submission logic 
+            });
+        });
+    </script>
 </head>
 <body>
     <nav class="nav-container">
@@ -31,7 +39,7 @@
                     <label>Email</label>
                     <input type="email" name="email" required placeholder="Enter a valid email address">
                     <label>Password</label>
-                    <input type="password" name="password" required minlength="8" required placeholder="Enter your password"> 
+                    <input type="password" name="password" required minlength="8" placeholder="Enter your password"> 
                     <p class="hint">At least 8 characters, 1 uppercase, 1 lowercase, 1 number</p>
                 </div>
                     <button type="submit">Sign Up</button>
