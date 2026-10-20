@@ -10,6 +10,20 @@
             document.querySelector(".signup-form").addEventListener("submit", function(e) {
                 e.preventDefault();
                 // Handling form submission logic 
+                const username = document.getElementById("username").value;
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                // Perform validation and send data to the server or local storage
+                if (/[A-Z]/.test(password) && /[a-z]/.test(password) && /[0-9]/.test(password) && password.length >= 8) {
+                    // Save user data to local storage or send to server
+                    localStorage.setItem("username", username);
+                    localStorage.setItem("email", email);
+                    alert("Sign up successful!");
+                    // Redirect to another page if needed
+                    window.location.href = "index.html";
+                } else {
+                    alert("Password must be at least 8 characters long and include at least one uppercase letter, one lowercase letter, and one number.");
+                }
             });
         });
     </script>
@@ -35,11 +49,11 @@
                 <div class="input-box">
                     <span class="icon"><i class="fas fa-user"></i></span>
                     <label>Username</label>
-                    <input type="text" name="username" required placeholder="Enter your username">
+                    <input id="username" type="text" name="username" required placeholder="Enter your username">
                     <label>Email</label>
-                    <input type="email" name="email" required placeholder="Enter a valid email address">
+                    <input id="email" type="email" name="email" required placeholder="Enter a valid email address">
                     <label>Password</label>
-                    <input type="password" name="password" required minlength="8" placeholder="Enter your password"> 
+                    <input id="password" type="password" name="password" required minlength="8" placeholder="Enter your password"> 
                     <p class="hint">At least 8 characters, 1 uppercase, 1 lowercase, 1 number</p>
                 </div>
                     <button type="submit">Sign Up</button>
