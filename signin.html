@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".signin-form").addEventListener("submit", function(e) {
+                // cancel the default form submission behavior
+                e.preventDefault();
+                // keep email and password values from form
+                const email = document.getElementById("email").value;
+                const password = document.getElementById("password").value;
+                // Retrieve stored user data from local storage
+                const storedEmail = localStorage.getItem("email");
+                if (email === storedEmail) {
+                    alert("Sign in successful!");
+                    // Redirect to another page if needed
+                    window.location.href = "index.html";
+                } else {
+                    alert("Invalid email or password. Please try again.");
+                }
+            });
+        });
 
+    </script>
 </head>
 <body>
     <!-- nav container -->
